@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int A, B;
+    // Ingresar los dos numeros
+    cin >> A >> B;
+
+    // Formulas matematicas para hallar el mayor y menor sin if
+    int mayor = (A + B + abs(A - B)) / 2;
+    int menor = (A + B - abs(A - B)) / 2;
+
+    cout << "El numero mayor es: " << mayor << endl;
+    cout << "El numero menor es: " << menor << endl;
+
+    return 0;
+}

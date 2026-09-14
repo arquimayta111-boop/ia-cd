@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int edad;
+    int ticketVIP; // 1 significa que tiene ticket, 0 significa que no
+    
+    // Ingresar la edad y luego 1 (si tiene VIP) o 0 (si no tiene VIP)
+    cin >> edad >> ticketVIP;
+
+    if (edad > 18 && ticketVIP == 1) {
+        cout << "PUEDE INGRESAR" << endl;
+    } else {
+        cout << "NO PUEDE INGRESAR" << endl;
+    }
+
+    return 0;
+}
